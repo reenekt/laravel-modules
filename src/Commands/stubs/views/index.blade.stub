@@ -1,0 +1,7 @@
+@extends('layouts.app')
+
+@section('content')
+    <div>
+        <h1>Example module's page</h1>
+    </div>
+@endsection

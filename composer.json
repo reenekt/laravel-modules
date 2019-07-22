@@ -1,0 +1,38 @@
+{
+  "name": "reenekt/laravel-modules",
+  "description": "Modules system for Laravel",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "reenekt",
+      "email": "thesunlightday@hmail.com",
+      "role": "developer",
+      "homepage": "https://github.com/reenekt"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "reenekt\\LaravelModules\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "App\\": "test_sandbox/app",
+      "reenekt\\LaravelModules\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "reenekt\\LaravelModules\\LaravelModulesServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "illuminate/support": "5.8.x-dev"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^3.8"
+  }
+}

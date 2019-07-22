@@ -1,0 +1,53 @@
+<?php
+
+namespace App\Modules\example;
+
+
+use reenekt\LaravelModules\AbstractLaravelModule;
+use reenekt\LaravelModules\ModuleInfo;
+
+class ExampleModule extends AbstractLaravelModule
+{
+    public function GetRoutes(): array
+    {
+        return [
+            'web' => 'routes/routes.php'
+        ];
+    }
+
+    public function GetControllersPath(): string
+    {
+        return 'Controllers';
+    }
+
+    public function GetViews(): array
+    {
+        return [
+            'views'
+        ];
+    }
+
+    public function GetMigrations(): array
+    {
+        return [
+            'migrations'
+        ];
+    }
+
+    public function GetTranslations(): array
+    {
+        return [
+            'lang'
+        ];
+    }
+
+    public function GetModuleInfo(): ModuleInfo
+    {
+        $moduleInfo = new ModuleInfo();
+        $moduleInfo->id = 'example';
+        $moduleInfo->name = 'example';
+        $moduleInfo->description = 'Description of example';
+        $moduleInfo->version = '1.0.0';
+        return $moduleInfo;
+    }
+}
