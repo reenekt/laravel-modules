@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "daddaa70ecb725e56772941a56d15985",
+    "content-hash": "23701e115245d32f857b4aa54a803c69",
     "packages": [
         {
             "name": "composer/xdebug-handler",
@@ -5234,7 +5234,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "illuminate/support": 20
+        "illuminate/support": 20,
+        "reenekt/laravel-modules": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

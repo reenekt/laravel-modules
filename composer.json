@@ -3,11 +3,12 @@
   "description": "Modules system for Laravel",
   "keywords": ["laravel", "modules", "module", "php"],
   "minimum-stability": "dev",
+  "version": "1.0.0-dev",
   "license": "MIT",
   "authors": [
     {
       "name": "reenekt",
-      "email": "thesunlightday@hmail.com",
+      "email": "thesunlightday@gmail.com",
       "role": "developer",
       "homepage": "https://github.com/reenekt"
     }
@@ -36,7 +37,7 @@
     }
   },
   "require": {
-    "illuminate/support": "5.8.x-dev"
+    "illuminate/support": "5.8.x"
   },
   "require-dev": {
     "orchestra/testbench": "^3.8"
