@@ -1,6 +1,7 @@
 {
   "name": "reenekt/laravel-modules",
   "description": "Modules system for Laravel",
+  "keywords": ["laravel", "modules", "module", "php"],
   "minimum-stability": "dev",
   "license": "MIT",
   "authors": [
@@ -11,6 +12,11 @@
       "homepage": "https://github.com/reenekt"
     }
   ],
+  "support": {
+    "source": "https://github.com/reenekt/laravel-modules",
+    "issues": "https://github.com/reenekt/laravel-modules/issues"
+  },
+  "homepage": "https://github.com/reenekt/laravel-modules",
   "autoload": {
     "psr-4": {
       "reenekt\\LaravelModules\\": "src/"
