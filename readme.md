@@ -50,5 +50,5 @@ See [LICENSE](LICENSE) file for more information
 
 ## TODO list
 * [x] Set up travis ci
-* [ ] Publish on packagist
+* [x] Publish on packagist
 * [ ] Make this repository better (add wiki, make github page, add issue templates and other)
