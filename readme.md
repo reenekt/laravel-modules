@@ -1,4 +1,6 @@
 # laravel-modules
+[![Build Status](https://travis-ci.org/reenekt/laravel-modules.svg?branch=master)](https://travis-ci.org/reenekt/laravel-modules)
+
 Modules system for Laravel applications
 
 ## Table of Contents
@@ -40,6 +42,6 @@ Author: [reenekt](https://github.com/reenekt)
 See [LICENSE](LICENSE) file for more information
 
 ## TODO list
-* [ ] Set up travis ci
+* [x] Set up travis ci
 * [ ] Publish on packagist
 * [ ] Make this repository better (add wiki, make github page, add issue templates and other)
