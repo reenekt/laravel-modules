@@ -12,6 +12,13 @@ Modules system for Laravel applications
 * [TODO list](#TODO-list)  
 
 ## Installation
+### Laravel app 
+Run following command from your application's folder
+```
+composer require "reenekt/laravel-modules"
+```
+
+### Installing this package for developing
 Clone (or download) this repository  
 ```
 git clone https://github.com/reenekt/laravel-modules.git
@@ -43,5 +50,5 @@ See [LICENSE](LICENSE) file for more information
 
 ## TODO list
 * [x] Set up travis ci
-* [ ] Publish on packagist
+* [x] Publish on packagist
 * [ ] Make this repository better (add wiki, make github page, add issue templates and other)
