@@ -22,14 +22,14 @@ class ModuleLoader
      * Returns all laravel modules
      * Return all laravel modules as [module directory => module class instance (object)]
      * @return array
-     * @throws \Exception
      * @author reenekt
+     * @throws \ReflectionException
      */
     public static function LoadModules()
     {
         $path = app_path(config('laravelModules.modules_folder'));
         if (!is_dir($path)) {
-            throw new \Exception('Not such directory!');
+            mkdir($path);
         }
         $modules = [];
         $modulesFolders = glob($path . '/*', GLOB_ONLYDIR);
@@ -50,6 +50,7 @@ class ModuleLoader
      * @param $moduleFolder
      * @return AbstractLaravelModule|null
      * @author reenekt
+     * @throws \ReflectionException
      */
     protected static function GetLaravelModule($moduleFolder)
     {

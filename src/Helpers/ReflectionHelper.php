@@ -11,6 +11,13 @@ namespace reenekt\LaravelModules\Helpers;
 
 class ReflectionHelper
 {
+    /**
+     * Get namespace and class name from file
+     *
+     * @param string $filepath Path to PHP file
+     * @return null|\ReflectionClass
+     * @throws \ReflectionException
+     */
     public static function GetReflectionClassFromFile($filepath)
     {
         $className = self::GetClassName($filepath);
@@ -22,6 +29,13 @@ class ReflectionHelper
         }
     }
 
+    /**
+     * Get class name from file
+     *
+     * @param string $filepath Path to PHP file
+     * @return string
+     * @throws \Exception
+     */
     public static function GetClassName($filepath)
     {
         if (!$filepath) {
@@ -51,6 +65,13 @@ class ReflectionHelper
         return $class;
     }
 
+    /**
+     * Get namespace from file
+     *
+     * @param string $filepath Path to PHP file
+     * @return null|string
+     * @throws \Exception
+     */
     public static function GetNamespace($filepath)
     {
         if (!$filepath) {
