@@ -39,7 +39,6 @@ abstract class LaravelModuleTestCase extends OrchestraTestCase
     protected function getEnvironmentSetUp($app)
     {
         $app->useAppPath(dirname(dirname(__DIR__)) . '/test_sandbox/app');
-        $app['config']->set('laravelModules.modules_folder', 'Modules');
     }
 
     public function setUp(): void

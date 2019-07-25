@@ -3,7 +3,6 @@
   "description": "Modules system for Laravel",
   "keywords": ["laravel", "modules", "module", "php"],
   "minimum-stability": "dev",
-  "version": "1.0.0-dev",
   "license": "MIT",
   "authors": [
     {
@@ -34,6 +33,9 @@
       "providers": [
         "reenekt\\LaravelModules\\LaravelModulesServiceProvider"
       ]
+    },
+    "branch-alias": {
+      "dev-master": "1.0.0-dev"
     }
   },
   "require": {
