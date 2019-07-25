@@ -44,7 +44,6 @@ class ModuleLoaderTest extends LaravelModuleTestCase
         $this->assertEquals('web', $appRoutes[0]['middleware'][0], 'Loaded example route must have web middleware');
         $this->assertEquals('App\Modules\example\Controllers', $appRoutes[0]['namespace'], 'Wrong example route\'s namespace');
         $this->assertEquals('App\Modules\example\Controllers\ExampleController@index', $appRoutes[0]['controller'], 'Wrong example route\'s controller');
-//        print_r($appRoutes);
 
         $this->ClearSandbox($moduleName, $moduleClassFileName);
     }
